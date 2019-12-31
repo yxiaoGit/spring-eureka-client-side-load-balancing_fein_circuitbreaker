@@ -16,6 +16,6 @@ public class AppController {
     private Client client;
     @RequestMapping(value="/process", method = RequestMethod.GET)
     public @ResponseBody String  showLoginPage(ModelMap model) throws RestClientException, IOException{
-        return client.getEmployee("/process");
+        return client.getEmployee();
     }
 }
